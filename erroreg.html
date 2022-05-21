@@ -255,7 +255,7 @@ function render(delta) {
 
 <div id="container" touch-action="none"></div>
 <div id="description">
-  <p>Oops. A general error as occured, please try again later.</p>
+  <p>Oops. A general ERROR as occured, please try again later.</p>
   <p>You can check the status of all the SGT Bots services on the <a href="https://theshadowbot.statuspage.io"> statuspage</a>.</p>
 </div>
 <!-- partial -->
@@ -263,6 +263,47 @@ function render(delta) {
 
 </body>
 </html>
+
+<script>
+
+function keyMapper(callbackList, options) {
+    const delay = hasProperty('keystrokeDelay', options) && options.keystrokeDelay >= 300 && options.keystrokeDelay;
+    const keystrokeDelay = delay || 1000;
+    const eventType = hasProperty('eventType', options) && options.eventType || 'keydown';
+
+    let state = {
+        buffer: [],
+        lastKeyTime: Date.now()
+    };
+
+    document.addEventListener(eventType, event => {
+        const key = event.key;
+        const currentTime = Date.now();
+        let buffer = [];
+
+        if (currentTime - state.lastKeyTime > keystrokeDelay) {
+            buffer = [key];
+        } else {
+            buffer = [...state.buffer, key];
+        }
+
+        state = {buffer: buffer, lastKeyTime: currentTime};
+
+        callbackList.forEach(callback => callback(buffer));
+    });
+
+    function hasProperty(property, object) {
+        return object && object.hasOwnProperty(property);
+    };
+}
+
+keyMapper([buffer => {
+    if (buffer.join('') === 'error') {
+      alert("MORE ERRORS");
+        
+    }}])
+</script>
+
 <style>
 body {
   margin: 0;

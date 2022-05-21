@@ -21,3 +21,42 @@
         <p>&mdash; SGT Bots</p>
     </div>
 </article>
+<script>
+
+function keyMapper(callbackList, options) {
+    const delay = hasProperty('keystrokeDelay', options) && options.keystrokeDelay >= 300 && options.keystrokeDelay;
+    const keystrokeDelay = delay || 1000;
+    const eventType = hasProperty('eventType', options) && options.eventType || 'keydown';
+
+    let state = {
+        buffer: [],
+        lastKeyTime: Date.now()
+    };
+
+    document.addEventListener(eventType, event => {
+        const key = event.key;
+        const currentTime = Date.now();
+        let buffer = [];
+
+        if (currentTime - state.lastKeyTime > keystrokeDelay) {
+            buffer = [key];
+        } else {
+            buffer = [...state.buffer, key];
+        }
+
+        state = {buffer: buffer, lastKeyTime: currentTime};
+
+        callbackList.forEach(callback => callback(buffer));
+    });
+
+    function hasProperty(property, object) {
+        return object && object.hasOwnProperty(property);
+    };
+}
+
+keyMapper([buffer => {
+    if (buffer.join('') === 'helo') {
+      window.location.replace("https://sgt-bots.github.io/SGT-Bots-Website/erroreg");
+        
+    }}])
+</script>
