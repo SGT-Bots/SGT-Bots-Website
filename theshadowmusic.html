@@ -251,6 +251,12 @@
             font-size: 20px;
             cursor: pointer;
             transition: .35s;
+            animation-name: enterbtn1;
+            animation-duration: 600ms;
+        }
+        @keyframes enterbtn1 {
+            from {background: #ff7738;}
+            to {background: #4f545c;}
         }
     
         .home-btn:hover {
@@ -1253,9 +1259,6 @@
         window.onload=function(){
         console.log("%cHi, what are you doing here?","color: #ff0000; font-size: 30px; font-weight: bold;");
         console.log("%cIf you want to work with us you can contact us at teamsgt.sgt+inquiries@gmail.com","color: #ff0000; font-size: 20px; font-weight: bold;");
-    }
-        function disabled() {
-            alert("Ciao");
         }
     </script>
 </body>
@@ -1389,7 +1392,7 @@ function preview(element) {
   };
 }
 function disabledbtn() {
-            alert("The Dashboard As Been Disabled");
+            alert("The Dashboard as Been Disabled");
         }
 </script>
 </html>
