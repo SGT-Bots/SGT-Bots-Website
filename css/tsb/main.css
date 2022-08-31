@@ -68,7 +68,7 @@ body {
 .heading {
     padding: 160px 50px !important;
     color: #fff !important;
-    background-image: url("../../SGT-Bots-Website/assets/tsb/wavy-purple.png") !important;
+    background-image: url("../../../SGT-Bots-Website/assets/tsb/wavy-purple.png") !important;
     background-position: bottom !important;
     background-size: 300% !important;
     background-repeat: no-repeat !important;
@@ -91,7 +91,7 @@ body {
     text-align: center !important;
     background: #5865F2 !important;
     padding: 60px 50px !important;
-    background-image: url("../../SGT-Bots-Website/assets/tsb/wavy-dark.svg") !important;
+    background-image: url("../../../SGT-Bots-Website/assets/tsb/wavy-dark.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
     background-repeat: no-repeat !important;
@@ -161,7 +161,7 @@ body {
 
 
 .page_end {
-    background-image: url("../../SGT-Bots-Website/assets/tsb/wavy-light.svg") !important;
+    background-image: url("../../../SGT-Bots-Website/assets/tsb/wavy-light.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
     background-repeat: no-repeat !important;
