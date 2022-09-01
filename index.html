@@ -458,13 +458,15 @@
 </footer>
 <!-- footer end -->
 
-<script src="https://5tfsrznsd652.statuspage.io/embed/script.js"></script>
 <script>
 	var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 	if (mobile) {
 		window.location.replace("/SGT-Bots-Website/indexold.html");             
 	} else {
-
+		const script = document.createElement('script');
+		script.src = 'https://5tfsrznsd652.statuspage.io/embed/script.js'
+		script.id = 'statuspage'
+		document.body.appendChild(script);
 	}
 	</script>
 </body>
