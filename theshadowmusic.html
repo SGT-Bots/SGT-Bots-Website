@@ -727,11 +727,12 @@
     <!-- Banner -->
     <script>
         // configObj = {"text":"TheShadowMusic will soon stop supporting commands with prefixes please use slash commands","bannerURL":"https://discord.com/blog/welcome-to-the-new-era-of-discord-apps","selectedBackgroundColor":"#ff6800","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"13px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
-        configObj = {"text":"Check our FAQ to find out more on Slash commands to be prepared for the transition","bannerURL":"#faq","selectedBackgroundColor":"#ff6800","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"13px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
+        configObj = {"text":"Read the changelog for the new 2.0.0 Update","bannerURL":"https://discord.com/channels/770929823581208596/887448439900749825/1021411518543315074","selectedBackgroundColor":"#109fff","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"13px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
     </script>
     <script>
         setTimeout(function() {
             var banner = document.getElementById('sw-banner');
+            // 121212
             banner.style.backgroundColor = '#121212';
             banner.style.color = '#121212';
             document.getElementById('sw-banner').style.color = 'white';
@@ -848,10 +849,34 @@
         <!-- Commands -->
         <div class="commands">
             <!-- Command Start -->
-            <div class="command" data-name="msc">
-                <h2>/bassboost</h2><span>
+            <div class="command" data-name="stg">
+                <h2>/247</h2><span>
                     <div class="cmdinfo">
-                        <p>Enables bass boosting audio effect</p>
+                        <p>Prevents the bot from ever disconnecting from a VC (toggle)</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="stg">
+                <h2>/autopause</h2><span>
+                    <div class="cmdinfo">
+                        <p>Automatically pause when everyone leaves the voice channel (toggle)</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="oth">
+                <h2>/clean</h2><span>
+                    <div class="cmdinfo">
+                        <p>Cleans the last 100 bot messages from channel.</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -863,19 +888,7 @@
             <div class="command" data-name="msc">
                 <h2>/clear</h2><span>
                     <div class="cmdinfo">
-                        <p>Clears the server queue</p>
-                    </div>
-                    <div class="cmdali">
-                        <p></p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="stg">
-                <h2>/config</h2><span>
-                    <div class="cmdinfo">
-                        <p>Edit the bot settings</p>
+                        <p>Clear all tracks from queue</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -885,21 +898,9 @@
             <!-- Command End -->
             <!-- Command Start -->
             <div class="command" data-name="msc">
-                <h2>/disconnect</h2><span>
+                <h2>/filters</h2><span>
                     <div class="cmdinfo">
-                        <p>Stop the music and leave the voice channel</p>
-                    </div>
-                    <div class="cmdali">
-                        <p></p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="msc">
-                <h2>/grab</h2><span>
-                    <div class="cmdinfo">
-                        <p>Saves the current song to your Direct Messages</p>
+                        <p>Add or remove filters</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -911,7 +912,19 @@
             <div class="command" data-name="oth">
                 <h2>/help</h2><span>
                     <div class="cmdinfo">
-                        <p>Information about the bot</p>
+                        <p>Shows this list</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="stg">
+                <h2>/247</h2><span>
+                    <div class="cmdinfo">
+                        <p>Prevents the bot from ever disconnecting from a VC (toggle)</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -923,7 +936,7 @@
             <div class="command" data-name="msc">
                 <h2>/loop</h2><span>
                     <div class="cmdinfo">
-                        <p>Loop the current song</p>
+                        <p>Loops the current song</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -933,9 +946,9 @@
             <!-- Command End -->
             <!-- Command Start -->
             <div class="command" data-name="msc">
-                <h2>/loopqueue</h2><span>
+                <h2>/loopq</h2><span>
                     <div class="cmdinfo">
-                        <p>Loop the whole queue</p>
+                        <p>Loop the current song queue</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -947,7 +960,19 @@
             <div class="command" data-name="msc">
                 <h2>/lyrics</h2><span>
                     <div class="cmdinfo">
-                        <p>Shows the lyrics of the song searched</p>
+                        <p>Shows the lyrics of a song</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="msc">
+                <h2>/move</h2><span>
+                    <div class="cmdinfo">
+                        <p>Moves track to a different position/p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -959,7 +984,7 @@
             <div class="command" data-name="msc">
                 <h2>/nowplaying</h2><span>
                     <div class="cmdinfo">
-                        <p>See what song is currently playing</p>
+                        <p>Shows the song currently playing in the voice channel</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -971,7 +996,19 @@
             <div class="command" data-name="msc">
                 <h2>/pause</h2><span>
                     <div class="cmdinfo">
-                        <p>Pauses the music</p>
+                        <p>Pauses the current playing track</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="oth">
+                <h2>/ping</h2><span>
+                    <div class="cmdinfo">
+                        <p>View the bot's latency</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -983,7 +1020,19 @@
             <div class="command" data-name="msc">
                 <h2>/play</h2><span>
                     <div class="cmdinfo">
-                        <p>Play your favorite songs</p>
+                        <p>Searches and plays the requested song</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="msc">
+                <h2>/previous</h2><span>
+                    <div class="cmdinfo">
+                        <p>Go back to the previous song</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -995,7 +1044,19 @@
             <div class="command" data-name="msc">
                 <h2>/queue</h2><span>
                     <div class="cmdinfo">
-                        <p>Shows all currently enqueued songs</p>
+                        <p>Shows the current queue</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="oth">
+                <h2>/reload</h2><span>
+                    <div class="cmdinfo">
+                        <p>Reload all commands</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1007,7 +1068,19 @@
             <div class="command" data-name="msc">
                 <h2>/remove</h2><span>
                     <div class="cmdinfo">
-                        <p>Remove a song from the queue</p>
+                        <p>Remove track you don't want from queue</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="msc">
+                <h2>/replay</h2><span>
+                    <div class="cmdinfo">
+                        <p>Replay current playing track</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1019,7 +1092,19 @@
             <div class="command" data-name="msc">
                 <h2>/resume</h2><span>
                     <div class="cmdinfo">
-                        <p>Resumes the music</p>
+                        <p>Resume current track</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="msc">
+                <h2>/save</h2><span>
+                    <div class="cmdinfo">
+                        <p>Saves current song to your DM's</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1031,7 +1116,7 @@
             <div class="command" data-name="msc">
                 <h2>/search</h2><span>
                     <div class="cmdinfo">
-                        <p>Shows a result of songs based on the search query</p>
+                        <p>Search for a song</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1043,7 +1128,7 @@
             <div class="command" data-name="msc">
                 <h2>/seek</h2><span>
                     <div class="cmdinfo">
-                        <p>Seek to a position in the song</p>
+                        <p>Seek to a specific time in the current song</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1055,7 +1140,7 @@
             <div class="command" data-name="msc">
                 <h2>/shuffle</h2><span>
                     <div class="cmdinfo">
-                        <p>Shuffles the queue</p>
+                        <p>Randomizes the queue</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1079,7 +1164,7 @@
             <div class="command" data-name="msc">
                 <h2>/skipto</h2><span>
                     <div class="cmdinfo">
-                        <p>Skip to a song in the queue</p>
+                        <p>Skip to a specific song in the queue</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1101,9 +1186,33 @@
             <!-- Command End -->
             <!-- Command Start -->
             <div class="command" data-name="msc">
+                <h2>/stop</h2><span>
+                    <div class="cmdinfo">
+                        <p>Stops whatever the bot is playing and leaves the voice channel</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="msc">
+                <h2>/summon</h2><span>
+                    <div class="cmdinfo">
+                        <p>Summons the bot to the channel</p>
+                    </div>
+                    <div class="cmdali">
+                        <p></p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="msc">
                 <h2>/volume</h2><span>
                     <div class="cmdinfo">
-                        <p>Check or change the current volume</p>
+                        <p>Change the volume of the current song</p>
                     </div>
                     <div class="cmdali">
                         <p></p>
@@ -1206,7 +1315,7 @@
                         <h2 class="question">8. When i will not be able to use prefix commands?
                         </h2><span class="faq-t"></span>
                     </div>
-                    <p class="answer"> We do not have a estimate, we want to make the transition as seamless as possible, and educate the users to the use of the new Slash commands. We suggest to start using slash commands, otherwise you will be disorientated when commands with prefixes are going to be discontinued</p>
+                    <p class="answer"> You will not be able to use prefix commands from the 2.0.0 update (19/09/22)</p>
                 </div>
                 <!-- question end -->
                 <!-- question start -->
