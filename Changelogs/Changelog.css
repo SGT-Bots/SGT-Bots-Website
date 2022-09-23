@@ -155,12 +155,12 @@ svg {
     fill: var(--bg-color);
 }
 * {
-background-color: var(--bg-color);
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -222,6 +222,7 @@ header {
     background: #007bff;
 }
 /* home */
+
 
 .home {
     margin-top: 150px;
@@ -379,3 +380,42 @@ footer {
 .home-text {
             text-align: center;
         }
+
+/* Mobile */
+.mobile-padding {
+    padding-right:0px;
+    padding-left:0px;
+    padding-bottom:0px;
+    padding-top:0px;
+}
+
+.mobile-text {
+    font-size: 50cm;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    
+    .article-text {
+        font-size: 38px;
+    }
+    .article-div {
+        width: 66.66666667%;
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 1px;
+        /* padding-left: 450px;
+        padding-right: 450px; */
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    img {
+        border-radius: 4%;
+        margin-bottom: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+  }
+  
