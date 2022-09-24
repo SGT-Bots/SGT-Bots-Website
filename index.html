@@ -247,7 +247,7 @@
             padding: 8px 50px;
             border-radius: 50px;
             border: none;
-            background: #ff5122;
+            background: var(--main-color);
             color: white;
             font-weight: bold;
             font-size: 20px;
@@ -258,9 +258,25 @@
         }
     
         .home-btn:hover {
+            background-color: var(--main-hover-color);
+        }
+        .home-btn1 {
+            margin-top: 15px;
+            width: auto;
+            padding: 8px 50px;
+            border-radius: 50px;
+            border: none;
+            background: #ff5122;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .35s;
+            animation-duration: 600ms;
+        }
+        .home-btn1:hover {
             background-color: var(--main-color);
         }
-
         .home-btn2 {
             margin-top: 15px;
             width: auto;
@@ -383,7 +399,7 @@
 </style>
 </head>
 <header>
-	<h1 class="logo">SGT Bots</h1>
+    <h1 class="logo">SGT Bots</h1>
 	<nav>
 		<ul class="nav-area top-nav">
 			<li><a href="#top">Home</a></li>
@@ -396,21 +412,20 @@
 </header>
 <body>
 <!-- home -->
-<!-- <div class="wrapper">
+<div class="wrapper">
 	<div class="home" id="home">
 		<div class="home-text">
-			<h1 id="botname">TheShadowMusic</h1>
-			<h3 style="margin-left: 0;">A TheShadowServer private bot</h3>
-			<p class="bot-description">TheShadowMusic offers music at its maximum quality,
-				login in the Dashboard to manage the servers</p>
-			<button class="home-btn" onclick="disabledbtn()">Dashboard</button>
+			<h1 id="botname">SGT Bots</h1>
+			<h3 style="font-size: 50px;">Imagina un Bot...</h3>
+			<p class="bot-description">Entra nel nostro server discord per ricevere una notifica quando un nostro prodotto viene aggiornato!</p>
+			<button class="home-btn" onclick="location.href='https://discord.gg/4wEQE6bzVE'">Entra nel nostro Server</button>
 		</div>
 		<div class="home-img">
-			<img src="/SGT-Bots-Website/assets/tsm/logo.png"
-				alt="TheShadowMusic Logo">
+			<img src="/SGT-Bots-Website/assets/logo.png"
+				alt="SGT Bots Logo">
 		</div>
 	</div>
-</div> -->
+</div>
 <!-- home end -->
 <!-- features -->
 <div class="features">
@@ -430,7 +445,7 @@
 			<div class="feature feature1">
 				<h4>TheShadowMusic</h4>
 				<p>TheShadowMusic è un bot privato per TheShadowServer il cui scopo è garantire ad i membri di TheShadowServer intrattenimento musicale, mantenendo la migliore qualità possibile</p>
-				<button class="home-btn" onclick="location.href='https://sgt-bots.github.io/SGT-Bots-Website/theshadowmusic'">Visita il sito</button>
+				<button class="home-btn1" onclick="location.href='https://sgt-bots.github.io/SGT-Bots-Website/theshadowmusic'">Visita il sito</button>
 			</div>
 			<!-- feature end -->
 			<!-- feature start -->
