@@ -375,6 +375,9 @@
         .mobile-foot {
                 display: none;
             }
+        .logo-mobile {
+            display: none;
+        }
             @media (max-width: 1200px) {
     
     .wrapper nav .categorys {
@@ -426,6 +429,12 @@
     .mobile-foot {
             display: initial;
         }
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display: initial;
+    }
     .home {
         margin-top: 0px;
         display: flex;
@@ -474,6 +483,7 @@
 
 <header>
 	<h1 class="logo">SGT Bots | Changelogs</h1>
+    <h1 class="logo-mobile">SGT Bots</h1>
 	<nav>
 		<ul class="nav-area top-nav">
 			<li><a href="/SGT-Bots-Website">Home</a></li>
@@ -555,9 +565,24 @@
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_0_1'">Visita il changelog</button>
             </div>
             <!-- feature end -->
-            <br>
-            <br>
         </div>
+        <div class="mobile-foot">
+            <div class="title">
+                <div class="th1">
+                    <h1>Altro</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <div class="home">
+                <button class="home-btn" onclick="location.href='/SGT-Bots-Website'">Home</button>
+            </div>
+        </div>
+        <br>
+        <br>
 </div>
 <!-- footer -->
 <footer>
