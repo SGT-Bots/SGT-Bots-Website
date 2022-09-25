@@ -296,7 +296,19 @@
         .home-btn2:hover {
             background-color: var(--main-color);
         }
-    
+        .foot-btn {
+            text-align: center;
+            padding: 8px 50px;
+            border-radius: 50px;
+            border: none;
+            background: var(--main-color);
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .35s;
+            animation-duration: 600ms;
+        }
         .home-img img {
             width: 250px;
             height: 250px;
@@ -397,7 +409,10 @@
             color: white;
             text-align: center;
         }
-        @media (max-width: 1200px) {
+        .mobile-foot {
+            display: none;
+        }
+@media (max-width: 1200px) {
     
     .wrapper nav .categorys {
         max-width: 600px;
@@ -445,7 +460,9 @@
     .top-nav {
         display: none;
     }
-
+    .mobile-foot {
+            display: initial;
+        }
     .home {
         margin-top: 0px;
         display: flex;
@@ -542,6 +559,14 @@
 			</div>
 			<!-- feature end -->
 		</div>
+        <div class="mobile-foot">
+            <div class="home">
+                <button class="home-btn">Changelogs</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
         <br>
 
 </div>
