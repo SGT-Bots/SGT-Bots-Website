@@ -393,8 +393,90 @@
             color: white;
             text-align: center;
         }
+        @media (max-width: 1200px) {
     
+    .wrapper nav .categorys {
+        max-width: 600px;
+    }
+
+    .wrapper {
+        max-width: 695px;
+        margin: 30px auto;
+    }
+
+    nav .categorys span {
+        padding: 7px 15px;
+    }
+}
+
+@media all and (max-width:900px) {
+    .features-grid {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .wrapper nav .categorys {
+        max-width: 600px;
+    }
+
+    .wrapper {
+        max-width: 450px;
+        margin: 30px auto;
+    }
+
+    nav .categorys span {
+        padding: 7px 15px;
+    }
+
+    header {
+        padding: 10px 25px;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .bot-description {
+        margin-right: 0;
+    }
+
+    .nav-area li a {
+        font-size: 12.25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        margin: 30px auto;
+    }
+
+    .wrapper nav .categorys {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .categorys span {
+        margin: 5px;
+    }
         /* footer end */
+}
 </style>
 </head>
 <header>
@@ -467,11 +549,11 @@
 <!-- footer end -->
 <script src="https://5tfsrznsd652.statuspage.io/embed/script.js"></script>
 <script>
-	var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-	if (mobile) {
-		window.location.replace("/SGT-Bots-Website/indexold.html");             
-	} else {
-	}
+	// var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+	// if (mobile) {
+	// 	window.location.replace("/SGT-Bots-Website/indexold.html");             
+	// } else {
+	// }
 	</script>
 </body>
 
