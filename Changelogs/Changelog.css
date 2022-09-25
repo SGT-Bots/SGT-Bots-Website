@@ -396,9 +396,15 @@ footer {
 .mobile-text {
     font-size: 50cm;
 }
+.mobile-foot {
+    display: none;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .mobile-foot {
+        display: initial;
+    }
     .article-text {
         font-size: 38px;
     }
@@ -419,9 +425,24 @@ footer {
         margin-right: auto;
         width: 80%;
     }
-  } */
+    .top-nav {
+        display: none;
+    }
+  }
 
-          @media (max-width: 1200px) {
+          /* @media (max-width: 1200px) {
+            .article-text {
+                font-size: 38px;
+            }
+            .article-div {
+                width: 66.66666667%;
+                position: relative;
+                float: left;
+                width: 100%;
+                min-height: 1px;
+                padding-left: 0%;
+                padding-right: 0%;
+            }
     
             .wrapper nav .categorys {
                 max-width: 600px;
@@ -528,4 +549,4 @@ footer {
                 margin-right: auto;
                 width: 80%;
             }
-        }
+        } */
