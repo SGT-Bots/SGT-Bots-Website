@@ -14,7 +14,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
         :root {
             --bg-color: #121212;
-            --main-color: rgb(255, 81, 0);
+            --main-color: rgb(255, 40, 0);
             --main-hover-color: rgb(255, 119, 56);
             --second-color: #1a1a1a;
             --third-color: #2c2c2c;
@@ -160,6 +160,52 @@
             color: #fff;
             background: #007bff;
         }
+
+        .home-btn1 {
+            margin-top: 15px;
+            width: auto;
+            border-radius: 50px;
+            border: none;
+            background: #ff5122;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .35s;
+            animation-duration: 600ms;
+        }
+        .home-btn1:hover {
+            background-color: var(--main-color);
+        }
+        .home-btn2 {
+            width: auto;
+            border-radius: 50px;
+            border: none;
+            background: #5865F2;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .35s;
+            animation-duration: 600ms;
+        }
+        .home-btn2:hover {
+            background-color: var(--main-color);
+        }
+        
+        .home-img img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            
+        }
+        .buttons {
+            height: 450px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
     
         /* navbar end */
         </style>
@@ -187,7 +233,7 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js-eu1.hs-scripts.com/25288811.js"></script>
+<!-- <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js-eu1.hs-scripts.com/25288811.js"></script> -->
 <!-- End of HubSpot Embed Code -->
 </head>
 
@@ -216,8 +262,13 @@
             <h2>Mobile Version</h2>
 			<h2>WIP</h2>
 		</div>
-	</div>
+    
+    </div>
+    <div class="Buttons">
+    </div>
     <footer>
+        <button class="home-btn1" onclick="location.href='https://sgt-bots.github.io/SGT-Bots-Website/theshadowmusic'">TheShadowMusic</button>
+        <button class="home-btn2" onclick="location.href='https://sgt-bots.github.io/SGT-Bots-Website/theshadowmusic'">TheShadowBot</button>
         <p>
             ©2019-2022 SGT Bots
         </p>
