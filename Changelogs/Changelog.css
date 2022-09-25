@@ -371,6 +371,7 @@ header {
 }
 /* footer */
 footer {
+    background-color: var(--bg-color);
     position: fixed;
     left: 0;
     bottom: 0;
