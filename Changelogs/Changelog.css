@@ -467,6 +467,7 @@ footer {
     
             header {
                 padding: 10px 25px;
+                height: 1px;
             }
     
             .top-nav {
@@ -474,6 +475,7 @@ footer {
             }
     
             .home {
+                margin-top: 0px;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: space-between;
@@ -518,6 +520,10 @@ footer {
                 min-height: 1px;
                 padding-left: 0%;
                 padding-right: 0%;
+            }
+            .home {
+                margin-top: 0px;
+                
             }
             img {
                 border-radius: 4%;
