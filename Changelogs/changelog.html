@@ -367,9 +367,12 @@ header {
 
     /* footer end */
     .home-text {
-                text-align: center;
-            }
-            @media (max-width: 1200px) {
+            text-align: center;
+        }
+    .mobile-foot {
+            display: none;
+        }
+@media (max-width: 1200px) {
     
     .wrapper nav .categorys {
         max-width: 600px;
@@ -394,6 +397,9 @@ header {
         flex-direction: column;
     }
 }
+    .mobile-foot {
+                display: initial;
+            }
 
 
 @media (max-width: 710px) {
@@ -417,7 +423,9 @@ header {
     .top-nav {
         display: none;
     }
-
+    .mobile-foot {
+            display: initial;
+        }
     .home {
         display: flex;
         flex-direction: column-reverse;
@@ -504,6 +512,18 @@ header {
 			</div>
 			<!-- feature end -->
 		</div>
+        <div class="mobile-foot">
+            <div class="title">
+                <div class="th1">
+                    <h1></h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+        </div>
         <div class="features-grid">
             <!-- feature start -->
             <div class="feature feature1">
@@ -533,7 +553,8 @@ header {
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_0_1'">Visita il changelog</button>
             </div>
             <!-- feature end -->
-
+            <br>
+            <br>
         </div>
 </div>
 <!-- footer -->
