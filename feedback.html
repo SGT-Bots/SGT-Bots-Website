@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html lang="it">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-	<title>SGT Bots</title>
-
-    <link rel="shortcut icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
-    <link rel="icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
-    <meta property="og:title" content="SGT Bots" />
-    <meta property="og:description" content="SGT Bots crea bot per Discord" />
-    <meta name="description" content="SGT Bots crea bot per Discord">
-    <meta property="og:site_name" content="SGT Bots" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sgt-bots.github.io/SGT-Bots-Website/" />
-    <meta property="og:image" content="https://sgt-bots.github.io/SGT-Bots-Website/assets/shareicon.png" />
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
-
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25288811.js"></script>
-<!-- End of HubSpot Embed Code -->
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">    
 <style>
     :root {
+    --input-border: rgb(255, 40, 0);
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
     --bg-color: #121212;
     --main-color: rgb(255, 40, 0);
     --main-hover-color: rgb(255, 119, 56);
@@ -498,107 +470,225 @@ header {
         margin: 5px;
     }
         /* footer end */
+}    
+* {    
+  box-sizing: border-box;    
+}    
+.home-btn {
+        margin-top: 15px;
+        width: auto;
+        padding: 8px 50px;
+        border-radius: 50px;
+        border: none;
+        background: var(--main-color);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .35s;
+        animation-name: enterbtn1;
+        animation-duration: 600ms;
+    }
+
+    .home-btn:hover {
+        background-color: var(--main-hover-color);
+    }
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 50px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 50px;    
+  resize: vertical;    
+}    
+input[type=subject], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 8px;    
+  
+  resize: vertical;
+  background-color: #121212;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+
+  padding: 12px 20px;    
+  border: none;    
+  
+  cursor: pointer;    
+  float: right;    
+}    
+    
+    
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+  border-radius: 15px;    
+  background-color: #37363d;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+label {
+    color: white;
+    font-weight: 500;
 }
-</style>
-</head>
+textarea {
+    resize: none;
+    color: white;
+    background-color: #121212;
+    transition: 180ms box-shadow ease-in-out;
+}
+textarea:focus {
+    box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) +
+          40%), 0.8);
+    outline: 3px solid transparent;
+}
+select {
+    color: #757575;
+}
+
+    
+
+</style>    
+</head>   
 <header>
-    <h1 class="logo">SGT Bots</h1>
+    <h1 class="logo">SGT Bots | Feedback</h1>
 	<nav>
 		<ul class="nav-area top-nav">
 			<li><a href="#top">Home</a></li>
             <li><a href="/SGT-Bots-Website/feedback">Feedback</a></li>
-			<li><a href="mailto:teamsgt.sgt@gmail.com">Contatti</a></li>
+			<li><a href="/SGT-Bots-Website/feedback">Feedback</a></li>
 			<li><a href="https://bit.ly/SGTNetwork-Support">Supporto</a></li>
 			<li><a href="https://sgt-bots.statuspage.io">Stato</a></li>
 		</ul>
 	</nav>
-</header>
-<body>
-<!-- home -->
-<div class="wrapper">
-	<div class="home" id="home">
-		<div class="home-text">
-			<h1 id="botname">SGT Bots</h1>
-			<h3 style="font-size: 50px;">Immagina un Bot...</h3>
-			<p class="bot-description">Entra nel nostro server discord per ricevere una notifica quando un nostro prodotto viene aggiornato!</p>
-			<button class="home-btn" onclick="location.href='https://discord.gg/4wEQE6bzVE'">Entra nel nostro Server</button>
-		</div>
-		<div class="home-img">
-			<img src="/SGT-Bots-Website/assets/logo.png"
-				alt="SGT Bots Logo">
-		</div>
-	</div>
+</header> 
+<body>     
+<div class="container">    
+  <form action="mailto:teamsgt.sgt+feedback@gmail.com">    
+    <div class="row">    
+   
+
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Prodotto</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="subject">    
+            <option value="Feedback">Seleziona il Prodotto..</option>    
+          <option value="TheShadowBot Feedback">TheShadowBot</option>    
+          <option value="TheShadowMusic Feedback">TheShadowMusic</option> 
+          <option value="Website Feedback">Sito Web</option>    
+          <option value="Altro Feedback">Altro</option>    
+          <option value="Feedback">Generale</option>       
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">
+      <div class="col-25">    
+        <label for="feed_back">Feedback</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="body" placeholder="Scrivi del feedback.." style="height:200px"></textarea>    
+      </div>
+    </div>    
+    <div class="row">    
+        <input class="home-btn" type="submit" value="Invia">    
+        <p>
+          Noi non ti invieremo mai mail di qualsiasi tipo, se vuoi contattarci <a href="mailto:teamsgt.sgt@gmail.com">scrivici</a>
+        </p>
+        <p>
+            Se una volta premuto "Invia" non succede nulla assicurati di avere un client mail installato
+        </p>
+    </div>    
+  </form>
 </div>
-<!-- home end -->
-<!-- features -->
-<div class="features">
-	<div class="wrapper reveal">
-		<div class="title">
-			<div class="th1">
-				<h1>Prodotti</h1>
-			</div>
-			<center>
-				<div class="thr">
-					<hr>
-				</div>
-			</center>
-		</div>
-		<!-- feature start -->
-		<div class="features-grid">
-			<div class="feature feature1">
-				<h4>TheShadowMusic</h4>
-				<p>TheShadowMusic è un bot privato per TheShadowServer il cui scopo è garantire ad i membri di TheShadowServer intrattenimento musicale, mantenendo la migliore qualità possibile</p>
-				<button class="home-btn1" onclick="location.href='/SGT-Bots-Website/theshadowmusic'">Visita il sito</button>
-			</div>
-			<!-- feature end -->
-			<!-- feature start -->
-			<div class="feature feature2">
-				<h4>TheShadowBot</h4>
-				<p>TheShadowBot è un bot publico il cui scopo è puramente intrattenere rispondendo ad alcuni messaggi inviati da utenti, facendo sembrare la chat più attiva non dando fastidio</p>
-				<button class="home-btn2" onclick="location.href='/SGT-Bots-Website/theshadowbot'">Visita il sito</button>
-			</div>
-			<!-- feature end -->
-		</div>
-        <div class="mobile-foot">
-            <div class="title">
-                <div class="th1">
-                    <h1>Altro</h1>
-                </div>
-                <center>
-                    <div class="thr">
-                        <hr>
-                    </div>
-                </center>
-            </div>
-            <div class="home">
-                <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/'">Changelogs</button>
-                <button class="home-btn" onclick="location.href='/SGT-Bots-Website/feedback/'">Feedback</button>
-                <button class="home-btn" onclick="location.href='https://sgt-bots.statuspage.io'">Status</button>
-            </div>
+</div>
+<div class="features-grid">
+    <!-- feature start -->
+    <div class="feature feature1">
+        <h4>Cerchi supporto?</h4>
+        <p>Contatta la nostra assistenza per ricevere supporto</p>
+        <button class="home-btn" onclick="location.href='/SGT-Bots-Website/'">Contatta la nostra assistenza</button>
+    </div>
+    <!-- feature end -->
+    <!-- feature start -->
+    <div class="feature feature1">
+        <h4>Vuoi segnalare un bug?</h4>
+        <p>Scrivi un report nel nostro bug tracker</p>
+        <button class="home-btn" onclick="wip()">Bug Tracker</button>
+    </div>
+    <!-- feature end -->  
+    <!-- feature start -->
+    <div class="feature feature1">
+        <h4>Vuoi contattarci direttamente?</h4>
+        <p>Se hai qualche domanda di elevata importanza puoi scriverci direttamente</p>
+        <button class="home-btn" onclick="location.href='mailto:teamsgt.sgt@gmail.com'">Scrivici</button>
+    </div>
+    <!-- feature end -->  
+</div>
+<div class="mobile-foot">
+    <div class="title">
+        <div class="th1">
+            <h1>Altro</h1>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
+        <center>
+            <div class="thr">
+                <hr>
+            </div>
+        </center>
+    </div>
+    <div class="home">
+        <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/'">Changelogs</button>
+        <button class="home-btn" onclick="location.href='https://sgt-bots.statuspage.io'">Status</button>
+        <button class="home-btn" onclick="location.href='/SGT-Bots-Website/'">Home</button>
 
+    </div>
 </div>
-<!-- features end -->
-<!-- footer -->
-
+<br>
+<br>
+<br>
+<br>
+<script>
+    function wip(){
+        alert("Coming Soon")
+    }
+</script>
 <footer>
     <p>
         ©2019-2022 SGT Bots
     </p>
 </footer>
 <!-- footer end -->
-<script src="https://5tfsrznsd652.statuspage.io/embed/script.js"></script>
-<script>
-	// var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-	// if (mobile) {
-	// 	window.location.replace("/SGT-Bots-Website/indexold.html");             
-	// } else {
-	// }
-	</script>
-</body>
-
-</html>
+</body>    
+</html> 
