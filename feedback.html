@@ -473,6 +473,9 @@ header {
 }    
 * {    
   box-sizing: border-box;    
+  -webkit-appearance: none;
+  appearance: none;
+  
 }    
 .home-btn {
         margin-top: 15px;
@@ -513,6 +516,7 @@ input[type=subject], select, textarea {
   border: 1px solid rgb(70, 68, 68);    
   border-radius: 8px;    
   
+  
   resize: vertical;
   background-color: #121212;    
 }    
@@ -521,7 +525,6 @@ label {
   padding: 12px 12px 12px 0;    
   display: inline-block;    
 }    
-    
 input[type=submit] {    
 
   padding: 12px 20px;    
@@ -580,7 +583,63 @@ select {
     
 
 </style>  
+<style>
+    .sw-banner {
+        transition: all .70s ease-in-out;
+        margin: 0;
+        animation-name: enter;
+        animation-duration: 600ms;
+    }
+    @keyframes enter {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    .login-btn {
+        border: 2px solid #4f545c !important;
+        font-size: 10px !important;
+        animation-name: enterbtn1;
+        animation-duration: 600ms;
+    }
+    @keyframes enterbtn1 {
+        from {border: #5865F2;}
+        to {border: #4f545c;}
+    }
+    .btn-primary {
+        background-color: #4f545c!important;
+        animation-name: enterbtn;
+        animation-duration: 600ms;
+    }
+    @keyframes enterbtn {
+        from {background-color: #5865F2;}
+        to {background-color: #4f545c;}
+    }
+    </style>
+<script>
+    var isSafari = window.safari !== undefined;
+    if (isSafari) {
+        configObj = {"text":"Il feedback form potrebbe non funzionare sul tuo browser (Safari MacOS)","bannerURL":"https://medium.com/@sgt-bots/il-futuro-di-theshadowbot-9c2db5cf95fe","selectedBackgroundColor":"#ED4245","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"18px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
+        setTimeout(function() {
+            var banner = document.getElementById('sw-banner');
+            banner.style.backgroundColor = '#121212';
+            banner.style.color = '#121212';
+            document.getElementById('sw-banner').style.color = 'white';
+        }, 3000);
+        setTimeout(function() {
+            var btn = document.getElementById('btn');
+            btn.style.backgroundColor = '#121212';
+        }, 100);
+    } else {
 
+    }
+    
+    // configObj = {"text":"TheShadowMusic will soon stop supporting commands with prefixes please use slash commands","bannerURL":"https://discord.com/blog/welcome-to-the-new-era-of-discord-apps","selectedBackgroundColor":"#ff6800","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"13px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
+</script>
+<script>
+</script>
 <title>SGT Bots | Feedback</title>
 <link rel="shortcut icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
 <link rel="icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
