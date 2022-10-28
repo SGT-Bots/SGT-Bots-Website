@@ -17,6 +17,14 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+video {
+    border-radius: 8%;
+    margin-bottom: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 figcaption {
     color:var(--nav-text-color);
