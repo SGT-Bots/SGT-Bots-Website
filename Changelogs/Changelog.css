@@ -11,14 +11,14 @@
 --very-small-text-color: #999999;
 }
 img {
-    border-radius: 4%;
+    border-radius: 20px;
     margin-bottom: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 video {
-    border-radius: 8%;
+    border-radius: 50px;
     margin-bottom: 5px;
     display: block;
     margin: 0 auto;
@@ -473,7 +473,6 @@ display: none;
         padding-right: 0%;
     }
     img {
-        border-radius: 4%;
         margin-bottom: 5px;
         display: block;
         margin-left: auto;
