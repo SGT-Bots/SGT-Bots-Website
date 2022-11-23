@@ -304,6 +304,8 @@ header {
     }
 
     .features-grid {
+        margin-left: 30%;
+        margin-right: 30%;
         display: -webkit-box;
         display: flex;
         -webkit-box-align: center;
@@ -384,93 +386,7 @@ header {
     .mobile-foot {
         display: none;
     }
-@media (max-width: 1200px) {
-    
-    .wrapper nav .categorys {
-        max-width: 600px;
-    }
-
-    .wrapper {
-        max-width: 695px;
-        margin: 30px auto;
-    }
-
-    nav .categorys span {
-        padding: 7px 15px;
-    }
-}
-
-@media all and (max-width:900px) {
-    .features-grid {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width: 710px) {
-    .wrapper nav .categorys {
-        max-width: 600px;
-    }
-
-    .wrapper {
-        max-width: 450px;
-        margin: 30px auto;
-    }
-
-    nav .categorys span {
-        padding: 7px 15px;
-    }
-
-    header {
-        padding: 10px 25px;
-    }
-
-    .top-nav {
-        display: none;
-    }
-    .mobile-foot {
-            display: initial;
-        }
-    .home {
-        margin-top: 0px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .home-text {
-        text-align: center;
-    }
-
-    .bot-description {
-        margin-right: 0;
-    }
-
-    .nav-area li a {
-        font-size: 12.25px;
-    }
-}
-
-@media (max-width: 600px) {
-    .wrapper {
-        margin: 30px auto;
-    }
-
-    .wrapper nav .categorys {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav .categorys span {
-        margin: 5px;
-    }
-        /* footer end */
-}    
+ 
 * {    
   box-sizing: border-box;    
   -webkit-appearance: none;
@@ -536,8 +452,8 @@ input[type=submit] {
     
     
 .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
   border-radius: 15px;    
   background-color: #37363d;    
   padding: 20px;    
@@ -579,7 +495,101 @@ textarea:focus {
 select {
     color: #757575;
 }
+@media (max-width: 1200px) {
+    
+    .wrapper nav .categorys {
+        max-width: 600px;
+    }
 
+    .wrapper {
+        max-width: 695px;
+        margin: 30px auto;
+    }
+
+    nav .categorys span {
+        padding: 7px 15px;
+    }
+}
+
+@media all and (max-width:900px) {
+    .features-grid {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+}
+
+
+@media (max-width: 710px) {
+    .wrapper nav .categorys {
+        max-width: 600px;
+    }
+
+    .wrapper {
+        max-width: 450px;
+        margin: 30px auto;
+    }
+
+    nav .categorys span {
+        padding: 7px 15px;
+    }
+
+    header {
+        padding: 10px 25px;
+    }
+
+    .top-nav {
+        display: none;
+    }
+    .mobile-foot {
+            display: initial;
+        }
+    .home {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .bot-description {
+        margin-right: 0;
+    }
+
+    .nav-area li a {
+        font-size: 12.25px;
+    }
+    
+
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        margin: 30px auto;
+    }
+
+    .wrapper nav .categorys {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .categorys span {
+        margin: 5px;
+    }
+        /* footer end */
+
+}   
     
 
 </style>  
@@ -713,14 +723,7 @@ select {
         <p>Contatta la nostra assistenza per ricevere supporto</p>
         <button class="home-btn" onclick="location.href='/SGT-Bots-Website/'">Contatta la nostra assistenza</button>
     </div>
-    <!-- feature end -->
-    <!-- feature start -->
-    <div class="feature feature1">
-        <h4>Vuoi segnalare un bug?</h4>
-        <p>Scrivi un report nel nostro bug tracker</p>
-        <button class="home-btn" onclick="wip()">Bug Tracker</button>
-    </div>
-    <!-- feature end -->  
+    <!-- feature end --> 
     <!-- feature start -->
     <div class="feature feature1">
         <h4>Vuoi contattarci direttamente?</h4>
