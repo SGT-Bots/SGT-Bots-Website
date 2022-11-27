@@ -494,6 +494,20 @@ display: none;
         margin-right: auto;
         width: 80%;
     }
+    video {
+        margin-bottom: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    iframe {
+        margin-bottom: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
     nav {
         display: none;
     }
