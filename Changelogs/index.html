@@ -250,7 +250,23 @@
         .home-btn:hover {
             background-color: var(--main-color);
         }
-    
+        .home-btn0 {
+            margin-top: 15px;
+            width: auto;
+            padding: 8px 50px;
+            border-radius: 50px;
+            border: none;
+            background: var(--main-color);
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .35s;
+            animation-duration: 600ms;
+        }
+        .home-btn0:hover {
+            background-color: var(--main-hover-color);
+        }    
         .home-btn2 {
             margin-top: 15px;
             width: auto;
@@ -298,7 +314,28 @@
             align-items: center;
             background-color: transparent;
         }
+        .feature0 {
+            background: none;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            -webkit-box-flex: 1;
+            flex: 1;
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid var(--third-color);
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
     
+        .feature:hover {
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        }    
         .feature {
             background: none;
             margin: 20px;
@@ -345,6 +382,15 @@
     
         .feature2:hover {
             border: 2px solid #5865F2;
+        }
+        .feature0 i,
+        .feature0 h4,
+        .feature0 .cta {
+            color: var(--main-color);
+        }
+    
+        .feature0:hover {
+            border: 2px solid var(--main-color);
         }
     
     
@@ -534,6 +580,13 @@
 		</div>
 		<!-- features start -->
 		<div class="features-grid">
+            <!-- feature start -->
+			<!-- <div class="feature feature0">
+				<h4>Il Blog è qui!</h4>
+				
+				<button class="home-btn0" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_0_0'">Leggi</button>
+			</div> -->
+			<!-- feature end -->
             <!-- feature start -->
 			<div class="feature feature1">
 				<h4>TheShadowMusic v2.0.0</h4>
