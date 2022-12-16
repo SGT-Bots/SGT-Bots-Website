@@ -523,7 +523,10 @@ display: none;
   }
 
           @media (max-width: 1200px) {
-
+            .article-div {
+                padding-left: 17%;
+                padding-right: 17%;
+            }
         }
         
         
@@ -568,7 +571,8 @@ display: none;
             }
             .mobile-nav {
                 display: block;
-            }
+            } 
+            
         
         }
         
