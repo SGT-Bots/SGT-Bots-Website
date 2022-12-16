@@ -530,11 +530,6 @@ display: none;
     
         @media all and (max-width:900px) {
 
-        }
-        
-    
-    
-        @media (max-width: 710px) {
             .article-div {
                 width: 66.66666667%;
                 position: relative;
@@ -574,8 +569,13 @@ display: none;
             .mobile-nav {
                 display: block;
             }
+        
         }
+        
     
+    
+        @media (max-width: 710px) {
+        }
         
         @media (max-width: 600px) {
 
