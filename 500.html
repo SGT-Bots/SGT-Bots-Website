@@ -21,6 +21,30 @@
     <h1>500</h1>
     <div>
         <p>Sorry for the inconvenience, Something went wrong on our end. You can find updates on our <a href="https://sgt-bots.statuspage.io">statuspage</a>, otherwise we&rsquo;ll be back up shortly!</p>
+        <p style="color:#d6433b">Konami Code</p>
     </div>
 </article>
+<script>
+  var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+  var current = 0;
+  
+  var keyHandler = function (event) {
+  
+    if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+      current = 0;
+      return;
+    }
+  
+    current++;
+  
+    if (pattern.length === current) {
+      current = 0;
+      window.location.replace("/SGT-Bots-Website/credits");
+    }
+  
+  };
+  
+  // Listen for keydown events
+  document.addEventListener('keydown', keyHandler, false);
+  </script>
 <!-- <script src="https://5tfsrznsd652.statuspage.io/embed/script.js"></script> -->
