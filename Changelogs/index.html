@@ -429,6 +429,13 @@
         .logo-mobile {
             display: none;
         }
+        .icon {
+    color: var(--heading-color);
+    size: 90px;
+    font-size: 30px;
+    padding-left: 50%;
+    display: none;
+}
             @media (max-width: 1200px) {
     
     .wrapper nav .categorys {
@@ -499,6 +506,9 @@
     .logo-mobile {
         display: initial;
     }
+    .icon {
+        display: initial;
+    }
     .home {
         margin-top: 0px;
         display: flex;
@@ -536,7 +546,6 @@
         /* footer end */
 }
 
-
     </style>
     <title>SGT Bots | Changelogs</title>
     <link rel="shortcut icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
@@ -551,13 +560,16 @@
     <meta property="og:url" content="https://sgt-bots.github.io/SGT-Bots-Website/" />
     <meta property="og:image" content="https://sgt-bots.github.io/SGT-Bots-Website/assets/shareicon.png" />
 </head>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
-	<h1 class="logo">SGT Bots | Changelogs</h1>
+    <h1 class="logo">SGT Bots | Changelogs</h1>
     <h1 class="logo-mobile">SGT Bots</h1>
+    <a href="/" class="icon" onclick="mobnav()">
+        <i class="fa fa-home"></i>
+      </a>
 	<nav>
-		<ul class="nav-area top-nav">
-			<li><a href="/SGT-Bots-Website">Home</a></li>
+        <ul class="nav-area top-nav">
+            <li><a href="/SGT-Bots-Website">Home</a></li>
             <li><a href="#">Changelogs</a></li>
 			<li><a href="/SGT-Bots-Website/feedback">Feedback</a></li>
 			 

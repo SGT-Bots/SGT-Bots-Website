@@ -393,6 +393,16 @@ header {
   appearance: none;
   
 }    
+.logo-mobile {
+            display: none;
+        }
+.icon {
+    color: var(--heading-color);
+    size: 90px;
+    font-size: 30px;
+    padding-left: 50%;
+    display: none;
+}
 .home-btn {
         margin-top: 15px;
         width: auto;
@@ -548,7 +558,15 @@ select {
     header {
         padding: 10px 25px;
     }
-
+    .icon {
+        display: initial;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-mobile {
+        display: initial;
+    }
     .top-nav {
         display: none;
     }
@@ -667,8 +685,14 @@ select {
 <meta property="og:url" content="https://sgt-bots.github.io/SGT-Bots-Website/" />
 <meta property="og:image" content="https://sgt-bots.github.io/SGT-Bots-Website/assets/shareicon.png" /> 
 </head>   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
     <h1 class="logo">SGT Bots | Feedback</h1>
+    <h1 class="logo-mobile">SGT Bots</h1>
+    <a href="/" class="icon" onclick="mobnav()">
+        <i class="fa fa-home"></i>
+      </a>
+	<nav>
 	<nav>
 		<ul class="nav-area top-nav">
 			<li><a href="/SGT-Bots-Website">Home</a></li>
