@@ -250,23 +250,7 @@
         .home-btn:hover {
             background-color: var(--main-color);
         }
-        .home-btn0 {
-            margin-top: 15px;
-            width: auto;
-            padding: 8px 50px;
-            border-radius: 50px;
-            border: none;
-            background: var(--main-color);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            cursor: pointer;
-            transition: .35s;
-            animation-duration: 600ms;
-        }
-        .home-btn0:hover {
-            background-color: var(--main-hover-color);
-        }    
+    
         .home-btn2 {
             margin-top: 15px;
             width: auto;
@@ -314,28 +298,7 @@
             align-items: center;
             background-color: transparent;
         }
-        .feature0 {
-            background: none;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            -webkit-box-flex: 1;
-            flex: 1;
-            display: -webkit-box;
-            display: flex;
-            flex-wrap: wrap;
-            border: 2px solid var(--third-color);
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-        }
     
-        .feature:hover {
-            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-            -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-        }    
         .feature {
             background: none;
             margin: 20px;
@@ -383,15 +346,6 @@
         .feature2:hover {
             border: 2px solid #5865F2;
         }
-        .feature0 i,
-        .feature0 h4,
-        .feature0 .cta {
-            color: var(--main-color);
-        }
-    
-        .feature0:hover {
-            border: 2px solid var(--main-color);
-        }
     
     
         .feature .cta span {
@@ -429,13 +383,6 @@
         .logo-mobile {
             display: none;
         }
-        .icon {
-    color: var(--heading-color);
-    size: 90px;
-    font-size: 30px;
-    padding-left: 40%;
-    display: none;
-}
             @media (max-width: 1200px) {
     
     .wrapper nav .categorys {
@@ -506,9 +453,6 @@
     .logo-mobile {
         display: initial;
     }
-    .icon {
-        display: initial;
-    }
     .home {
         margin-top: 0px;
         display: flex;
@@ -546,6 +490,7 @@
         /* footer end */
 }
 
+
     </style>
     <title>SGT Bots | Changelogs</title>
     <link rel="shortcut icon" href="https://sgt-bots.github.io/SGT-Bots-Website/assets/favcon.ico" type="image/x-icon">
@@ -560,19 +505,16 @@
     <meta property="og:url" content="https://sgt-bots.github.io/SGT-Bots-Website/" />
     <meta property="og:image" content="https://sgt-bots.github.io/SGT-Bots-Website/assets/shareicon.png" />
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <header>
-    <h1 class="logo">SGT Bots | Changelogs</h1>
-    <h1 class="logo-mobile">Changelogs</h1>
-    <a href="/" class="icon" onclick="mobnav()">
-        <i class="fa fa-home"></i>
-      </a>
+	<h1 class="logo">SGT Bots | Changelogs</h1>
+    <h1 class="logo-mobile">SGT Bots</h1>
 	<nav>
-        <ul class="nav-area top-nav">
-            <li><a href="/SGT-Bots-Website">Home</a></li>
+		<ul class="nav-area top-nav">
+			<li><a href="/SGT-Bots-Website">Home</a></li>
             <li><a href="#">Changelogs</a></li>
 			<li><a href="/SGT-Bots-Website/feedback">Feedback</a></li>
-			 
+			<li><a href="https://bit.ly/SGTNetwork-Support">Supporto</a></li>
 			<li><a href="https://sgt-bots.statuspage.io">Stato</a></li>
 		</ul>
 	</nav>
@@ -593,13 +535,6 @@
 		<!-- features start -->
 		<div class="features-grid">
             <!-- feature start -->
-			<!-- <div class="feature feature0">
-				<h4>Il Blog è qui!</h4>
-				
-				<button class="home-btn0" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_0_0'">Leggi</button>
-			</div> -->
-			<!-- feature end -->
-            <!-- feature start -->
 			<div class="feature feature1">
 				<h4>TheShadowMusic v2.0.0</h4>
 				<p>Scopri le novità presenti nella versione major 2.0.0 di TheShadowMusic. Questo aggiornamento fornisce grandi miglioramenti alla interfaccia ed i metodi di interazione con il bot</p>
@@ -608,9 +543,9 @@
 			<!-- feature end -->
             <!-- feature start -->
 			<div class="feature feature1">
-				<h4>TheShadowMusic v2.5.0</h4>
-				<p>Scopri le novità presenti nel feature update 2.4.0 di TheShadowMusic. Questo aggiornamento fornisce miglioramenti alla interfaccia ed i metodi di interazione con il bot</p>
-				<button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_5_0'">Leggi il changelog</button>
+				<h4>TheShadowMusic v2.2.0</h4>
+				<p>Scopri le novità presenti nel feature update 2.2.0 di TheShadowMusic. Questo aggiornamento fornisce miglioramenti alla interfaccia ed i metodi di interazione con il bot</p>
+				<button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_2_0'">Leggi il changelog</button>
 			</div>
 			<!-- feature end -->
             <!-- feature start -->
@@ -636,43 +571,6 @@
         <div class="features-grid">
             <!-- feature start -->
             <div class="feature feature1">
-                <h4>TheShadowMusic v2.4.1</h4>
-                <p>Scopri le novità presenti nella versione hotfix 2.4.1 di TheShadowMusic. Questo aggiornamento fornisce dei miglioramenti alle performance e risoluzione di bug</p>
-                <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_4_1'">Leggi il changelog</button>
-            </div>
-            <!-- feature end -->
-            <!-- feature start -->
-			<div class="feature feature1">
-				<h4>TheShadowMusic v2.4.0</h4>
-				<p>Scopri le novità presenti nel feature update 2.4.0 di TheShadowMusic. Questo aggiornamento fornisce miglioramenti alla interfaccia ed i metodi di interazione con il bot</p>
-				<button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_4_0'">Leggi il changelog</button>
-			</div>
-			<!-- feature end -->
-            <!-- feature start -->
-            <div class="feature feature1">
-                <h4>TheShadowMusic v2.3.1</h4>
-                <p>Scopri le novità presenti nella versione hotfix 2.3.1 di TheShadowMusic. Questo aggiornamento fornisce dei miglioramenti alle performance e risoluzione di bug</p>
-                <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_3_1'">Leggi il changelog</button>
-            </div>
-            <!-- feature end -->
-            <!-- feature start -->
-			<div class="feature feature1">
-				<h4>TheShadowMusic v2.3.0</h4>
-				<p>Find out what's new in feature update 2.3.0 of TheShadowMusic. This update provides improvements to the interface and methods of interacting with the bot</p>
-				<button class="home-btn" onclick="location.href='/SGT-Bots-Website-en/Changelogs/tsm-2_3_0'">Read the changelog</button>
-			</div>
-			<!-- feature end -->
-        </div>
-        <div class="features-grid">
-            <!-- feature start -->
-            <div class="feature feature1">
-                <h4>TheShadowMusic v2.2.4</h4>
-                <p>Scopri le novità presenti nella versione hotfix 2.2.4 di TheShadowMusic. Questo aggiornamento fornisce dei miglioramenti alle performance e risoluzione di bug</p>
-                <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_2_4'">Leggi il changelog</button>
-            </div>
-            <!-- feature end -->
-            <!-- feature start -->
-            <div class="feature feature1">
                 <h4>TheShadowMusic v2.2.3</h4>
                 <p>Scopri le novità presenti nella versione hotfix 2.2.3 di TheShadowMusic. Questo aggiornamento fornisce dei miglioramenti alle performance e risoluzione di bug</p>
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_2_3'">Leggi il changelog</button>
@@ -692,15 +590,6 @@
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_2_1'">Leggi il changelog</button>
             </div>
             <!-- feature end -->
-        </div>
-        <div class="features-grid">
-            <!-- feature start -->
-            <div class="feature feature1">
-                <h4>TheShadowMusic v2.2.0</h4>
-                <p>Scopri le novità presenti nel feature update 2.2.0 di TheShadowMusic. Questo aggiornamento fornisce miglioramenti alla interfaccia ed i metodi di interazione con il bot</p>
-                <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_2_0'">Leggi il changelog</button>
-            </div>
-            <!-- feature end -->
             <!-- feature start -->
             <div class="feature feature1">
                 <h4>TheShadowMusic v2.1.2</h4>
@@ -708,6 +597,8 @@
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_1_2'">Leggi il changelog</button>
             </div>
             <!-- feature end -->
+        </div>
+        <div class="features-grid">
             <!-- feature start -->
             <div class="feature feature1">
                 <h4>TheShadowMusic v2.1.1</h4>
@@ -722,8 +613,6 @@
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_1_0'">Leggi il changelog</button>
             </div>
             <!-- feature end -->
-        </div>
-        <div class="features-grid">
             <!-- feature start -->
             <div class="feature feature1">
                 <h4>TheShadowMusic v2.0.4</h4>
@@ -738,6 +627,8 @@
                 <button class="home-btn" onclick="location.href='/SGT-Bots-Website/Changelogs/tsm-2_0_3'">Leggi il changelog</button>
             </div>
             <!-- feature end -->
+        </div>
+        <div class="features-grid">
             <!-- feature start -->
             <div class="feature feature1">
                 <h4>TheShadowMusic v2.0.2</h4>
@@ -791,7 +682,7 @@
 <!-- footer -->
 <footer>
     <p>
-        ©2019-2023 SGT Bots
+        ©2019-2022 SGT Bots
     </p>
 </footer>
 <!-- footer end -->
