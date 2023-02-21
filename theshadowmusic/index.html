@@ -590,6 +590,9 @@
         /* faq end */
         /* footer */
         footer {
+            border-radius: 30px 30px 0 0;
+            margin-left: 30%;
+            margin-right: 30%;
             display: flex;
             width: auto;
             height: 250px;
@@ -606,6 +609,16 @@
             justify-content: space-around;
             height: 250px;
             color: white;
+
+        }
+
+        .legal-foot {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 0px;
+            line-height: 0px;
         }
         .mobile-nav {
                 display: none;
@@ -629,7 +642,9 @@
             .wrapper nav .categorys {
                 max-width: 600px;
             }
-    
+            footer {
+                border-radius: 20px;
+            }
             .wrapper {
                 max-width: 695px;
                 margin: 30px auto;
@@ -652,6 +667,16 @@
     
     
         @media (max-width: 710px) {
+            footer {
+                margin-left: 2%;
+                margin-right: 2%; 
+                
+                
+            }
+            .legal-foot {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
             .wrapper nav .categorys {
                 max-width: 600px;
             }
@@ -1356,7 +1381,7 @@
 
         <div class="wrapper">
             <div class="foot">
-                <h1>TheShadowMusic</h1>
+                <h1 style="padding-top: 50px;">TheShadowMusic</h1>
                 <nav>
                     <ul class="nav-area bottom-nav">
                         <div class="desktop-nav">
@@ -1374,7 +1399,11 @@
                         </div>
                     </ul>
                 </nav>
-                <h4>©2021-2023 SGT Bots</h4>
+                <div class="legal-foot">
+                    <p>SGT Bots is not associated with Google LLC.</p>
+                    <p>"YouTube" And "Spotify" are Trademarks of Google LLC and Spotify AB respectively.</p>
+                </div>
+                <h4 style="margin-bottom: 10px;">©2021-2023 SGT Bots</h4>
             </div>
         </div>
     </footer>
