@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta
+    name="TheShadowBot"
+    content="TheShadowBot è un bot che risponde automaticamente ad
+    alcuni messaggi rendendo la chat più attiva!">
+    <meta name="description" content="TheShadowBot è un bot che risponde automaticamente ad alcuni messaggi rendendo la chat più attiva!"/>
+    
+    <meta name="google-site-verification" content="R671fBg4J94yXMLCqHW9uPi67a2sFSPMX6Ro7xyrivw" />
+    <meta name="theme-color" content="#5865F2">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/SGT-Bots-Website/assets/tsb/favcon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/SGT-Bots-Website/assets/tsb/favcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/SGT-Bots-Website/css/tsb/bootstrap.min.css">
+    <link rel="stylesheet" href="/SGT-Bots-Website/css/tsb/main.css">
+    <link rel="stylesheet" href="/SGT-Bots-Website/css/tsb/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <title>TheShadowBot - Discord Bot</title>
+    <!--- Open Graph -->
+    <meta property="og:title" content="TheShadowBot" />
+    <meta property="og:description" content="TheShadowBot è un bot che risponde automaticamente ad alcuni messaggi rendendo la chat più attiva!" />
+    <meta property="og:site_name" content="TheShadowBot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sgt-theshadowbot.herokuapp.com/index.html" />
+    <meta property="og:image" content="https://i.imgur.com/ZtUnPFF.png" />
+    <!--- End Open Graph -->
+    <!--- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@TheShadowBotN" />
+    <meta name="twitter:title" content="TheShadowBot" />
+    <meta name="twitter:description" content="TheShadowBot è un bot che risponde automaticamente ad alcuni messaggi rendendo la chat più attiva!" />
+    <meta name="twitter:image" content="https://i.imgur.com/ZtUnPFF.png" />
+    <!--- End Twitter Cards -->
+</head>
+<body>
+    <style>
+        .sw-banner {
+            transition: all .70s ease-in-out;
+            margin: 0;
+            animation-name: enter;
+            animation-duration: 600ms;
+        }
+        @keyframes enter {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
+        .login-btn {
+            border: 2px solid #4f545c !important;
+            font-size: 10px !important;
+            animation-name: enterbtn1;
+            animation-duration: 600ms;
+        }
+        @keyframes enterbtn1 {
+            from {border: #5865F2;}
+            to {border: #4f545c;}
+        }
+        .btn-primary {
+            background-color: #4f545c!important;
+            animation-name: enterbtn;
+            animation-duration: 600ms;
+        }
+        @keyframes enterbtn {
+            from {background-color: #5865F2;}
+            to {background-color: #4f545c;}
+        }
+        </style>
+        <!-- Banner -->
+        <script>
+            // configObj = {"text":"TheShadowMusic will soon stop supporting commands with prefixes please use slash commands","bannerURL":"https://discord.com/blog/welcome-to-the-new-era-of-discord-apps","selectedBackgroundColor":"#ff6800","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"13px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
+            configObj = {"text":"TheShadowBot è stato discontinuato il 10/08/22","bannerURL":"/SGT-Bots-Website/Blog/tsb-end_of_life","selectedBackgroundColor":"#ED4245","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"18px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });
+        </script>
+        <script>
+            setTimeout(function() {
+                var banner = document.getElementById('sw-banner');
+                banner.style.backgroundColor = '#5865F2';
+                banner.style.color = '#5865F2';
+                document.getElementById('sw-banner').style.color = 'white';
+            }, 3000);
+            setTimeout(function() {
+                var btn = document.getElementById('btn');
+                btn.style.backgroundColor = '#4f545c';
+            }, 100);
+        </script>
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="/SGT-Bots-Website/assets/tsb/menuIcon.svg" width="20px" height="20px" alt="menu icon" style="max-width: none !important;">
+    </button>
+    <img src="/SGT-Bots-Website/assets/tsb/BotLogo.png" alt="TheShadowBot Logo" width="50" height="50">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://sgt-bots.github.io/SGT-Bots-Website/">Home <span class="sr-only">(current)</span></a>
+        </ul>
+
+        <div class="nav-item">
+            <a class="nav-link" href="https://sgt-bots.statuspage.io">Stato</a>
+        </div>
+        <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" onclick="location.href='/SGT-Bots-Website/Blog/tsb-end_of_life'">Ulteriori Informazioni</button>
+    </div>
+</nav>
+<div class="heading">
+    <h1 class="display-5 title">TheShadowBot</h1>
+    <p class="subtitle">TheShadowBot è un bot che risponde automaticamente ad<br />alcuni messaggi rendendo la chat più attiva!</p>
+    <a class="btn btn-primary btn-lg" href="/SGT-Bots-Website/Blog/tsb-end_of_life" target="_blank" role="button" id="btn">Ulteriori Informazioni</a>
+    <br /><br /><br /><br /><br /><br />
+</div>
+<div class="features">
+    <div class="title">Feature di TheShadowBot</div>
+    <div class="subtitle">Le migliori feature di TheShadowBot</div>
+    <div class="cards">
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Semplice da utilizare</h5>
+            <p class="card-text">TheShadowBot non ha bisogno di alcun setup aggiuntivo, ed se qualcosa non va puoi sempre contattare la nostra velocissima assistenza.</p>
+        </div>
+    </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Rende la Chat più attiva</h5>
+                <p class="card-text">TheShadowBot risponde automaticamente ad alcune parole o frasi non essendo troppo intrusivo, rendendo la chat più attiva, ottimo per piccoli server.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Sempre aggiornato</h5>
+                <p class="card-text">SGT Bots aggiorna TheShadowBot continuamente aggiungendo feature, risolvendo problemi o migliorando sempre di più la sicurezza.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="statistics">
+    <div class="cards">
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">40+</h1>
+                <p style="font-weight: bold !important;font-size: 20px !important;">Server</p>
+            </div>
+        </div>
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">350+</h1>
+                <p style="font-weight: bold !important;font-size: 20px !important;">Utenti</p>
+            </div>
+        </div>
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">250+</h1>
+                <p style="font-weight: bold !important;font-size: 20px !important;">Canali</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page_end">
+    <div class="start">
+        <div class="card">
+            <div class="card-body gs-card">
+                <div class="title">Convinto da TheShadowBot?</div>
+                <div class="subtitle">Aggungilo ora ed rendi il tuo server più attivo</div>
+                <br />
+                <a class="btn btn-primary btn-lg" href="/SGT-Bots-Website/Blog/tsb-end_of_life" role="button">Ulteriori Informazioni</a>
+            </div><br />
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bot-footer">
+            <img src="/SGT-Bots-Website/assets/tsb/BotLogoWord.png" alt="SGT Bots logo" width="150"><br />
+            Copyright ©SGT Bots - 2020-2022
+        </div><br/>
+        <div class="sgt">Bot created by <a href="https://sgt-bots.github.io/SGT-Bots-Website/"> SGT Bots</a></div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/now-ui-kit.min.js"></script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25288811.js"></script>
+<!-- End of HubSpot Embed Code -->
+<script src="https://5tfsrznsd652.statuspage.io/embed/script.js"></script>
+</body>
+</html>
