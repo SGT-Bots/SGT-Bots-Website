@@ -248,14 +248,14 @@
             padding: 8px 50px;
             border-radius: 50px;
             border: none;
-            background: #4e545c;
+            background: #ff7738;
             color: white;
             font-weight: bold;
             font-size: 20px;
             cursor: pointer;
             transition: .35s;
-            animation-name: enterbtn1;
-            animation-duration: 600ms;
+            /* animation-name: enterbtn1;
+            animation-duration: 600ms; */
         }
         @keyframes enterbtn1 {
             from {background: #ff7738;}
@@ -263,7 +263,7 @@
         }
     
         .home-btn:hover {
-            background-color: #737f8c;
+            background-color: #FF281F;
         }
     
         .home-img img {
@@ -795,8 +795,8 @@
                 <h1 id="botname">TheShadowMusic</h1>
                 <h3 style="margin-left: 0;">A TheShadowServer private bot</h3>
                 <p class="bot-description">TheShadowMusic offers music at its maximum quality,
-                    login in the Dashboard to manage the servers</p>
-                <button class="home-btn" onclick="disabledbtn()">Dashboard</button>
+                    login to manage your account settings</p>
+                <button class="home-btn" onclick="disabledbtn()">Login</button>
             </div>
             <div class="home-img">
                 <img src="/SGT-Bots-Website/assets/tsm/logo.png"
@@ -1550,7 +1550,7 @@ function preview(element) {
   };
 }
 function disabledbtn() {
-            alert("The Dashboard is currently disabled");
+            document.location.href = 'https://sgt-account.web.app/';
         }
 </script>
 </html>
