@@ -243,7 +243,25 @@ header {
 .btn-area:hover {
     background-color: var(--main-hover-color);
 }
+.home-btn3 {
+    margin-top: 15px;
+    width: auto;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .35s;
+    animation-name: enterbtn1;
+    animation-duration: 600ms;
+}
 
+.home-btn3:hover {
+    background-color: var(--main-hover-color);
+}
 ::selection {
     color: #fff;
     background: #007bff;
