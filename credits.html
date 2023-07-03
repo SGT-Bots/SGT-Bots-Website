@@ -84,7 +84,25 @@
             margin-bottom: 20px;
     
         }
-    
+        .home-btn3 {
+        margin-top: 15px;
+        width: auto;
+        padding: 8px 20px;
+        border-radius: 50px;
+        border: none;
+        background: var(--main-color);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .35s;
+        animation-name: enterbtn1;
+        animation-duration: 600ms;
+    }
+
+    .home-btn3:hover {
+        background-color: var(--main-hover-color);
+    }
         .article-text {
             font-weight: lighter;
             margin-top: 10px;
@@ -522,6 +540,7 @@
 			<li><a href="/SGT-Bots-Website/feedback">Feedback</a></li>
 			 
 			<li><a href="https://sgt-bots.statuspage.io">Stato</a></li>
+            <button id="login-btn" class="home-btn3" onclick="location.href='https://sgt-account.web.app'">SGT Account</button>
 		</ul>
 	</nav>
 </header>

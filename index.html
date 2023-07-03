@@ -262,6 +262,25 @@ header {
     .home-btn:hover {
         background-color: var(--main-hover-color);
     }
+    .home-btn3 {
+        margin-top: 15px;
+        width: auto;
+        padding: 8px 20px;
+        border-radius: 50px;
+        border: none;
+        background: var(--main-color);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .35s;
+        animation-name: enterbtn1;
+        animation-duration: 600ms;
+    }
+
+    .home-btn3:hover {
+        background-color: var(--main-hover-color);
+    }
     .home-btn1 {
         margin-top: 15px;
         width: auto;
@@ -412,6 +431,12 @@ header {
     .mobile-foot {
         display: none;
     }
+    .pfp {
+        scale: 0.75;
+    margin-top: 30px;
+    align-items: rigth;
+    border-radius: 50%;
+    }
 @media (max-width: 1200px) {
     
     .wrapper nav .categorys {
@@ -546,8 +571,10 @@ header {
 			<li><a href="/SGT-Bots-Website/feedback">Feedback</a></li>
 			 
 			<li><a href="https://sgt-bots.statuspage.io">Stato</a></li>
+            <button id="login-btn" class="home-btn3" onclick="location.href='https://sgt-account.web.app'">SGT Account</button>
 		</ul>
 	</nav>
+    <img class="pfp" id="auth-pfp" hidden src="https://www.gravatar.com/avatar/00000000000000000000000000000000">
 </header>
 <body>
 <!-- home -->
@@ -642,6 +669,7 @@ header {
     if(shortLang === 'en')
         window.location.replace('/SGT-Bots-Website-en/');
 </script>
+<script type="module" src="/SGT-Bots-Website/auth/auth.js"></script>
 <script src="https://5tfsrznsd652.statuspage.io/embed/script.js"></script>
 <script>
 	// var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
