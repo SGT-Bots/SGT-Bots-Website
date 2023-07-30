@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://https://sgtbots.com/sitemap.xml
+Sitemap: http://sgt-bots.github.io/SGT-Bots-Website/sitemap.xml
