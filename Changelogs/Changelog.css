@@ -73,6 +73,28 @@ a {
     letter-spacing: 1px;
 }
 
+table {
+    color: var(--heading-color); 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #606060;
+}
+th {
+    color: var(--heading-color)
+}
+
+
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #000000;
